@@ -155,8 +155,8 @@ html {
 .section-fin {
   text-align: center;
   padding: 60px 0;
-  font-size: 2em;
-  letter-spacing: 1.5px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
   font-weight: 800; /* épaisseur accentuée */
 }
 

@@ -1,51 +1,64 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
 }
 
-header {
-    background: #005daa;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.background {
+  background-image: url('assets/assurance_main.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background: #e6e6e6;
-    padding: 10px;
-    gap: 15px;
+/* NAVIGATION */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px 0;
+  z-index: 10;
 }
 
-nav a {
-    text-decoration: none;
-    color: #005daa;
-    font-weight: bold;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 10px 15px;
+  transition: background 0.3s;
+  border-radius: 5px;
 }
 
-section {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    margin-top: 20px;
-    border-radius: 8px;
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-iframe {
-    border: none;
-    border-radius: 5px;
+/* TITRE CENTRÉ */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
 }
 
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #005daa;
-    color: white;
-    margin-top: 20px;
+.centered h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin: 0;
+  color: #e0e0e0;
 }

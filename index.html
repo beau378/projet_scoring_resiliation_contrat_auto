@@ -1,74 +1,38 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Projet Data : Résiliation Auto</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 950px;
-      margin: auto;
-      padding: 40px;
-      background-color: #ffffff;
-      color: #222;
-    }
-    h1, h2 {
-      color: #1f4e79;
-    }
-    a.button {
-      display: inline-block;
-      margin: 10px 15px 10px 0;
-      padding: 12px 20px;
-      background-color: #1f4e79;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    a.button:hover {
-      background-color: #143553;
-    }
-    img {
-      width: 100%;
-      border: 1px solid #ccc;
-      margin-top: 20px;
-    }
-    ul {
-      line-height: 1.6em;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>📊 Projet Data : Prédiction de la résiliation des contrats auto</h1>
-
-  <p>
-    Ce projet vise à prédire la résiliation de contrats d'assurance automobile à partir des données de 90 000 clients.
-    Il mobilise des techniques avancées de data science, de la modélisation supervisée à l’interprétation (SHAP),
-    et se conclut par un dashboard interactif sous Power BI.
-  </p>
-
-  <a class="button" href="https://liveumb-my.sharepoint.com/:u:/g/personal/s_beauliere001_umb_edu/EUGgK5DvbL5NjYotA8ouK-8BzWHgVKJQ-9i8rMBhRvyNMw?e=g0nPHb" target="_blank">🔎 Voir le dashboard interactif</a>
-  <a class="button" href="https://github.com/beau378/projet_scoring_resiliation_contrat_auto" target="_blank">💻 Code GitHub</a>
-
-  <h2>🧠 Compétences mises en œuvre</h2>
+<nav>
   <ul>
-    <li>Feature engineering sur données clients (contrats actifs/résilés)</li>
-    <li>Modélisation : régression logistique, XGBoost, LightGBM, stacking</li>
-    <li>Évaluation : AUC, F1-score, courbe de lift, matrice de confusion</li>
-    <li>Analyse des variables importantes (SHAP)</li>
-    <li>Visualisation métier sous Power BI</li>
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#analyse">Analyse</a></li>
+    <li><a href="#telechargement">Téléchargement</a></li>
   </ul>
-
-  <h2>🖼️ Aperçu du Dashboard</h2>
-  <img src="assets/dashboard_capture.png" alt="Capture du Dashboard Power BI">
-
-  <h2>🙋 À propos</h2>
+</nav>
+<section id="accueil">
+  <img src="assets/churn_cover.png" alt="Couverture" style="width:100%;">
+  <h1>Scoring du risque de résiliation de contrats d'assurance</h1>
   <p>
-    Étudiant en Master 2 Data Science à l’Université Paris 1 Panthéon-Sorbonne, je suis passionné par les applications concrètes de la data dans les domaines marketing et assurance. 
-    Ce projet illustre ma capacité à concevoir une solution de bout en bout, avec une forte orientation métier.
+    Ce projet de data science met en œuvre une chaîne de traitement complète : de l'exploration des données jusqu’à la modélisation du risque de résiliation de contrats d’assurance automobile. Le scoring ainsi obtenu permet de segmenter les clients et d’adapter les actions marketing de rétention.
+  </p>
+</section>
+<section id="analyse">
+  <h2>Analyse du modèle</h2>
+
+  <h3>📈 Courbe de lift</h3>
+  <p>
+    La courbe de lift permet d’évaluer la performance du modèle en comparant le taux de résiliation détecté à ce qu’on obtiendrait aléatoirement.
+  </p>
+  <img src="assets/powerbi.png" alt="Power BI dashboard" width="600">
+
+  <h3>🔢 Matrice de confusion dynamique</h3>
+  <p>
+    La matrice de confusion, dynamique selon le seuil de décision, permet d'observer la répartition des vraies et fausses prédictions.
   </p>
 
-</body>
-</html>
+  <h3>🧩 Segmentation des profils à risque</h3>
+  <p>
+    Les profils à risque sont extraits à partir des variables les plus influentes, identifiées via SHAP. La segmentation aide à comprendre les motifs de résiliation.
+  </p>
+  <img src="assets/assurance_main.jpg" alt="Illustration assurance" width="600">
+</section>
+<section id="telechargement">
+  <h2>📄 Télécharger le rapport complet</h2>
+  <a href="assets/dashboard_scoring_powerbi.pdf" download>📥 Télécharger le dashboard (PDF)</a>
+</section>

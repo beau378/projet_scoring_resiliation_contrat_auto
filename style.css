@@ -105,3 +105,19 @@ html {
   font-size: 1.1em;
   line-height: 1.6;
 }
+
+
+.blue-background {
+  background: linear-gradient(to right, #002f4b, #005f89); /* Bleu foncé à moyen */
+  color: white;
+}
+
+.blue-background h2,
+.blue-background h3,
+.blue-background li {
+  color: white;
+}
+
+.blue-background b {
+  color: #ffd700; /* met en évidence les données (facultatif) */
+}

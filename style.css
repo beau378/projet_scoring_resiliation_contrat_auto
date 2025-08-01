@@ -153,11 +153,15 @@ html {
 }
 
 .section-fin {
-  background-color: #111;
-  color: white;
   text-align: center;
   padding: 60px 0;
   font-size: 1.4em;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 800; /* épaisseur accentuée */
 }
+
+.section-fin p {
+  margin: 0;
+  color: white;
+}
+

@@ -151,3 +151,13 @@ html {
   background-color: #005f89;
   color: white;
 }
+
+.section-fin {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
